@@ -34,5 +34,19 @@ public class BlockSection {
 		this.adviser = adviser;
 	}
 	
+	public String toString() {
+		
+		String out = "";
+		
+		out += "Block Section: " + getBlockCode();
+		out += "\t\t\tBlock Section Description: " + getDescription();
+		out += "\nClass Adviser: " + getAdviser();
+		
+		for(Student student : studentList) {
+			out += "\n" + student;
+		}
+		
+		return out;
+	}
 	
 }

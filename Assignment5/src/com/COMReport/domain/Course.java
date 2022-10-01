@@ -39,4 +39,10 @@ public class Course {
 		this.time = time;
 	}
 	
+	public String toString() {
+		String out = "";
+		
+		out += "\n" + courseCode + "\t" + description + "\t\t" + unit + "\t" + day + "\t" + time;
+		return out;
+	}
 }
