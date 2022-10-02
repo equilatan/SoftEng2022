@@ -36,14 +36,16 @@ public class Student {
 	
 	public String toString() {
 		String out = "";
-		out += "\nStudent Number: " + studentNumber;
+		out +="-----------------------------------------------------------------------------------\n";
+		out += "Student Number: " + studentNumber;
 		out += "\t\t\tStudent Name: " + name;
 		out += "\tProgram: " + program;
 		out += "\n\nSchedule";
-		out += "\nCourse code\tDescription\tUnit\tDay\tTime";
+		out += "\nCourse code\tDescription\t\tUnit\tDay\tTime";
 		for(Course course : courseList) {
 			out += course;
 		}
+		
 		return out;
 	}
 	

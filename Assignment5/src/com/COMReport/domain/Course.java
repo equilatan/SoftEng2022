@@ -41,8 +41,19 @@ public class Course {
 	
 	public String toString() {
 		String out = "";
+		String align;
 		
-		out += "\n" + courseCode + "\t" + description + "\t\t" + unit + "\t" + day + "\t" + time;
+		//fix alignemnt of columns when printed
+		if(description.length()<=10) {
+			align = "\t\t\t";
+		}
+		else if(description.length()<=15) {
+			align = "\t\t";
+		}
+		else align = "\t";
+		
+		
+		out += "\n" + courseCode + "\t" + description + align + unit + "\t" + day + "\t" + time;
 		return out;
 	}
 }

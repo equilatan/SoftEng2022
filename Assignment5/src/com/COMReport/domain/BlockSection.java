@@ -40,7 +40,7 @@ public class BlockSection {
 		
 		out += "Block Section: " + getBlockCode();
 		out += "\t\t\tBlock Section Description: " + getDescription();
-		out += "\nClass Adviser: " + getAdviser();
+		out += "\nClass Adviser: " + getAdviser() + "\n";
 		
 		for(Student student : studentList) {
 			out += "\n" + student;
