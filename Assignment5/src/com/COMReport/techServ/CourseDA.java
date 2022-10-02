@@ -1,4 +1,4 @@
-package com.COMReport.techsrv;
+package com.COMReport.techServ;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -18,15 +18,15 @@ public class CourseDA {
 		while(courseFile.hasNext()) {
 			
 			Course course = new Course();
-			String courseRow = courseFile.nextLine();
-			String[] courseRowSpecific = courseRow.split(", ");
+			String rowCourse = courseFile.nextLine();
+			String[] rowCourseSpecific = rowCourse.split(", ");
 			
-			if(studNo.contentEquals(courseRowSpecific[0])) {
-				course.setCourseCode(courseRowSpecific[1]);
-				course.setDescription(courseRowSpecific[2]);
-				course.setUnit(Integer.parseInt(courseRowSpecific[3]));
-				course.setDay(courseRowSpecific[4]);
-				course.setTime(courseRowSpecific[5]);
+			if(studNo.contentEquals(rowCourseSpecific[0])) {
+				course.setCourseCode(rowCourseSpecific[1]);
+				course.setDescription(rowCourseSpecific[2]);
+				course.setUnit(Integer.parseInt(rowCourseSpecific[3]));
+				course.setDay(rowCourseSpecific[4]);
+				course.setTime(rowCourseSpecific[5]);
 				courseList.add(course);
 			}
 			

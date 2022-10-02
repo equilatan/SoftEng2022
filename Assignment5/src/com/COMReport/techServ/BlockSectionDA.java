@@ -1,4 +1,4 @@
-package com.COMReport.techsrv;
+package com.COMReport.techServ;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -20,12 +20,12 @@ public class BlockSectionDA {
 		Scanner blockFile = new Scanner(new FileReader("/home/emiya/git/SoftEng2022/Assignment5/src/blockSectionInfo.csv"));
 				
 		while(blockFile.hasNext()) {
-			String blockRow = new String();
-			blockRow = blockFile.nextLine();
-			String[] blockRowSpecific = blockRow.split(",");
-			blockSection.setBlockCode(blockRowSpecific[0]);
-			blockSection.setDescription(blockRowSpecific[1]);
-			blockSection.setAdviser(blockRowSpecific[2]);
+			String rowBlock = new String();
+			rowBlock = blockFile.nextLine();
+			String[] rowBlockSectionSpecific = rowBlock.split(",");
+			blockSection.setBlockCode(rowBlockSectionSpecific[0]);
+			blockSection.setDescription(rowBlockSectionSpecific[1]);
+			blockSection.setAdviser(rowBlockSectionSpecific[2]);
 		}
 		
 		StudentDA studentDA = new StudentDA(blockSection.getBlockCode());

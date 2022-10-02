@@ -1,7 +1,4 @@
-package com.COMReport.main;
-
-import com.COMReport.techsrv.BlockSectionDA;
-import com.COMReport.techsrv.StudentDA;
+package com.COMReport.ui;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,6 +7,8 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.COMReport.domain.*;
+import com.COMReport.techServ.BlockSectionDA;
+import com.COMReport.techServ.StudentDA;
 
 public class COMReport {
 
