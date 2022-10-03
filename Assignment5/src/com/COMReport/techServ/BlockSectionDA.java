@@ -2,11 +2,9 @@ package com.COMReport.techServ;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-import com.COMReport.domain.*;
+import com.COMReport.domain.BlockSection;
 
 public class BlockSectionDA {
 

@@ -30,9 +30,6 @@ public class CourseDA {
 				courseList.add(course);
 			}
 			
-			//123, ITL221-18, OOP Lab, 1, Mon, 7:00 - 10:00AM
-
-			
 		}
 		
 	}
